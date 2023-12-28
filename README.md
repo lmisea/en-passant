@@ -25,7 +25,7 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
    ```
 2. Install npm packages.
    ```bash
-    npm install
+   npm install
    ```
 3. Run the prepare script for setting up the git hooks.
    ```bash
