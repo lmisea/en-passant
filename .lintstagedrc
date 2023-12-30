@@ -1,6 +1,4 @@
 {
-  "**/*.{js,jsx,ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
-  ]
+  "**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+  "package.json": ["prettier-package-json --write", "git add"]
 }

@@ -3,7 +3,7 @@ import './App.css'
 const App = () => {
   return (
     <>
-      <h1>En-passant</h1>
+      <h1>EnPassant</h1>
     </>
   )
 }
