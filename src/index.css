@@ -1,3 +1,6 @@
+/* Noto sans mono font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+Mono:wght@400;600&display=swap');
+
 /* In case of 'Unknown at rule @tailwind' error, install the following extension:
  * https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
  * Tailwind CSS IntelliSense
@@ -6,7 +9,6 @@
  *   "plaintext": "html"
  * }
  */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

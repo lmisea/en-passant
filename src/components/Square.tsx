@@ -16,6 +16,10 @@ type SquareProps = {
    */
   corner?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
   /**
+   * Square with rounded corners
+   */
+  roundCorner?: boolean
+  /**
    * Square size
    */
   size?: 'sm' | 'md' | 'lg'
@@ -37,6 +41,7 @@ const Square = ({
   file,
   rank,
   corner,
+  roundCorner = true,
   size = 'md',
   piece,
   pieceColor,
@@ -49,14 +54,16 @@ const Square = ({
   let squareSize: string
   switch (size) {
     case 'sm':
-      squareSize = 'px-8 py-8'
+      squareSize = 'w-16 h-16'
       break
     case 'md':
-      squareSize = 'px-9 py-9'
+      squareSize = 'w-18 h-18'
       break
     case 'lg':
-      squareSize = 'px-10 py-10'
+      squareSize = 'w-20 h-20'
   }
+
+  if (!roundCorner) corner = undefined
 
   let cornerSquare: string
   switch (corner) {
@@ -92,12 +99,13 @@ const Square = ({
         ${cornerSquare}
         ${hoverEffect}
         ${activeEffect}
-        ease-in-out border-2
+        relative ease-in-out border-2 font-noto-sans font-semibold select-none
+        flex items-center justify-center
       `}
     >
-      {file}
-      {rank}
-      {pieceColor}
+      <div className="absolute top-0 left-2">{rank}</div>
+      <div className="absolute bottom-0.5 right-2">{file}</div>
+      <div>{pieceColor}</div>
     </div>
   )
 }
