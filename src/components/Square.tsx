@@ -1,3 +1,5 @@
+import Piece from './Piece'
+
 type SquareProps = {
   /**
    * Square color
@@ -94,18 +96,16 @@ const Square = ({
   return (
     <div
       className={`
-        ${squareColor}
-        ${squareSize}
-        ${cornerSquare}
-        ${hoverEffect}
-        ${activeEffect}
-        relative ease-in-out border-2 font-noto-sans font-semibold select-none
-        flex items-center justify-center
+        ${squareColor} ${squareSize} ${cornerSquare} ${hoverEffect}
+        ${activeEffect} relative ease-in-out border-2 font-noto-sans
+        font-semibold select-none flex items-center justify-center
       `}
     >
       <div className="absolute top-0 left-2">{rank}</div>
       <div className="absolute bottom-0.5 right-2">{file}</div>
-      <div>{pieceColor}</div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <Piece type={piece} color={pieceColor} scale={size} />
+      </div>
     </div>
   )
 }
