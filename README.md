@@ -16,8 +16,8 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (^20.10.0).
-- [npm](https://www.npmjs.com/) (^10.2.5).
+- [Node.js](https://nodejs.org/en/).
+- [npm](https://www.npmjs.com/).
 
 ### Installation
 
@@ -56,3 +56,11 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
    ```bash
    npm run preview
    ```
+
+## Attributions
+
+All the attributions are located in the [ATTRIBUTIONS.md](https://github.com/lmisea/en-passant/blob/main/ATTRIBUTIONS.md) file.
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/lmisea/en-passant/blob/main/LICENSE).

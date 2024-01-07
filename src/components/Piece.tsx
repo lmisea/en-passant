@@ -38,13 +38,13 @@ const Piece = ({ color, type, scale = 'md' }: PieceProps) => {
   let pieceScale: string
   switch (scale) {
     case 'sm':
-      pieceScale = 'scale-[1.2]'
+      pieceScale = 'scale-120'
       break
     case 'md':
-      pieceScale = 'scale-[1.32]'
+      pieceScale = 'scale-135'
       break
     case 'lg':
-      pieceScale = 'scale-[1.45]'
+      pieceScale = 'scale-148'
   }
 
   let PieceComponent: (props: SVGProps<SVGSVGElement>) => JSX.Element

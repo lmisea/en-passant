@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Piece from './Piece'
 
 type SquareProps = {
@@ -14,11 +15,15 @@ type SquareProps = {
    */
   rank?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
   /**
+   * Show board coordinates
+   */
+  coordinates?: boolean
+  /**
    * Specify if the square is a corner square and which corner
    */
   corner?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
   /**
-   * Square with rounded corners
+   * Show board with rounded corners
    */
   roundCorner?: boolean
   /**
@@ -42,6 +47,7 @@ const Square = ({
   color,
   file,
   rank,
+  coordinates = true,
   corner,
   roundCorner = true,
   size = 'md',
@@ -63,6 +69,11 @@ const Square = ({
       break
     case 'lg':
       squareSize = 'w-20 h-20'
+  }
+
+  if (!coordinates) {
+    rank = undefined
+    file = undefined
   }
 
   if (!roundCorner) corner = undefined
@@ -89,20 +100,55 @@ const Square = ({
     ? 'hover:cursor-grab hover:border-bright-emerald'
     : ''
 
-  const activeEffect: string = piece
-    ? 'active:cursor-grabbing active:bg-gradient-to-t from-active-square to-active-square active:border-active-square'
-    : ''
+  const [focusStyle, setFocusStyle] = useState('')
+
+  const [isActive, setIsActive] = useState(false)
+
+  const [rightClickStyle, setRightClickStyle] = useState('')
+
+  const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    if (!piece) return
+    if (event.button !== 0) return
+    setIsActive(true)
+    setFocusStyle((prevFocusStyle) =>
+      prevFocusStyle === ''
+        ? 'bg-gradient-to-t from-active-square to-active-square border-emerald'
+        : '',
+    )
+    setRightClickStyle('')
+  }
+
+  const handleRightClick = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+  ) => {
+    event.preventDefault()
+    setIsActive(false)
+    setRightClickStyle((prevRightClickStyle) =>
+      prevRightClickStyle === ''
+        ? 'bg-gradient-to-t from-selected-square to-selected-square border-folly'
+        : '',
+    )
+    setFocusStyle('')
+  }
+
+  const activeEffect: string =
+    isActive && piece
+      ? 'active:cursor-grabbing active:bg-gradient-to-t from-active-square to-active-square active:border-active-square'
+      : ''
 
   return (
     <div
       className={`
         ${squareColor} ${squareSize} ${cornerSquare} ${hoverEffect}
-        ${activeEffect} relative ease-in-out border-2 font-noto-sans
-        font-semibold select-none flex items-center justify-center
+        ${focusStyle} ${rightClickStyle} ${activeEffect} relative ease-in-out
+        font-noto-sans font-semibold select-none flex items-center
+        justify-center border-2 duration-200 transition-all
       `}
+      onMouseDown={handleClick}
+      onContextMenu={handleRightClick}
     >
-      <div className="absolute top-0 left-2">{rank}</div>
-      <div className="absolute bottom-0.5 right-2">{file}</div>
+      <div className="absolute top-0 left-1">{rank}</div>
+      <div className="absolute bottom-0 right-2">{file}</div>
       <div className="absolute inset-0 flex items-center justify-center">
         <Piece type={piece} color={pieceColor} scale={size} />
       </div>

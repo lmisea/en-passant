@@ -7,15 +7,23 @@ type BoardProps = {
    */
   squareSize?: 'sm' | 'md' | 'lg'
   /**
-   * Round board corners
+   * Show board with rounded corners
    */
   round?: boolean
+  /**
+   * Show board coordinates
+   */
+  coordinates?: boolean
 }
 
 /**
  * Chessboard component
  */
-const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
+const Board = ({
+  squareSize = 'md',
+  round = true,
+  coordinates = true,
+}: BoardProps) => {
   return (
     <>
       <VStack spacing={0}>
@@ -25,6 +33,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
             corner="top-left"
             roundCorner={round}
             rank={8}
+            coordinates={coordinates}
             piece="rook"
             pieceColor="black"
             size={squareSize}
@@ -80,6 +89,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="black"
             rank={7}
+            coordinates={coordinates}
             piece="pawn"
             pieceColor="black"
             size={squareSize}
@@ -130,7 +140,12 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
       </VStack>
       <VStack spacing={0}>
         <HStack spacing={0}>
-          <Square color="white" rank={6} size={squareSize} />
+          <Square
+            color="white"
+            rank={6}
+            size={squareSize}
+            coordinates={coordinates}
+          />
           <Square color="black" size={squareSize} />
           <Square color="white" size={squareSize} />
           <Square color="black" size={squareSize} />
@@ -142,7 +157,12 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
       </VStack>
       <VStack spacing={0}>
         <HStack spacing={0}>
-          <Square color="black" rank={5} size={squareSize} />
+          <Square
+            color="black"
+            rank={5}
+            size={squareSize}
+            coordinates={coordinates}
+          />
           <Square color="white" size={squareSize} />
           <Square color="black" size={squareSize} />
           <Square color="white" size={squareSize} />
@@ -154,7 +174,12 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
       </VStack>
       <VStack spacing={0}>
         <HStack spacing={0}>
-          <Square color="white" rank={4} size={squareSize} />
+          <Square
+            color="white"
+            rank={4}
+            size={squareSize}
+            coordinates={coordinates}
+          />
           <Square color="black" size={squareSize} />
           <Square color="white" size={squareSize} />
           <Square color="black" size={squareSize} />
@@ -166,7 +191,12 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
       </VStack>
       <VStack spacing={0}>
         <HStack spacing={0}>
-          <Square color="black" rank={3} size={squareSize} />
+          <Square
+            color="black"
+            rank={3}
+            size={squareSize}
+            coordinates={coordinates}
+          />
           <Square color="white" size={squareSize} />
           <Square color="black" size={squareSize} />
           <Square color="white" size={squareSize} />
@@ -181,6 +211,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="white"
             rank={2}
+            coordinates={coordinates}
             piece="pawn"
             pieceColor="white"
             size={squareSize}
@@ -237,6 +268,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
             roundCorner={round}
             rank={1}
             file="a"
+            coordinates={coordinates}
             piece="rook"
             pieceColor="white"
             size={squareSize}
@@ -244,6 +276,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="white"
             file="b"
+            coordinates={coordinates}
             piece="knight"
             pieceColor="white"
             size={squareSize}
@@ -251,6 +284,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="black"
             file="c"
+            coordinates={coordinates}
             piece="bishop"
             pieceColor="white"
             size={squareSize}
@@ -258,6 +292,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="white"
             file="d"
+            coordinates={coordinates}
             piece="queen"
             pieceColor="white"
             size={squareSize}
@@ -265,6 +300,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="black"
             file="e"
+            coordinates={coordinates}
             piece="king"
             pieceColor="white"
             size={squareSize}
@@ -272,6 +308,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="white"
             file="f"
+            coordinates={coordinates}
             piece="bishop"
             pieceColor="white"
             size={squareSize}
@@ -279,6 +316,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
           <Square
             color="black"
             file="g"
+            coordinates={coordinates}
             piece="knight"
             pieceColor="white"
             size={squareSize}
@@ -288,6 +326,7 @@ const Board = ({ squareSize = 'md', round = true }: BoardProps) => {
             corner="bottom-right"
             roundCorner={round}
             file="h"
+            coordinates={coordinates}
             piece="rook"
             pieceColor="white"
             size={squareSize}

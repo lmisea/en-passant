@@ -17,6 +17,8 @@
   :root {
     /* For rgba(6, 186, 99, <alpha-value>) */
     --color-active: 6, 186, 99;
+    /* For rgba(224, 26, 79, <alpha-value>) */
+    --color-selected: 255, 22, 84;
   }
 }
 

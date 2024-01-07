@@ -18,7 +18,7 @@
     "prepare": "husky install",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "svgr:create": "svgr -- src/assets/"
+    "svgr:create": "svgr -- public/piece/cburnett"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
