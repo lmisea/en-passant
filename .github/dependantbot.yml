@@ -1,0 +1,8 @@
+# Dependant bot configuration file
+
+version: 2
+updates:
+  - package-ecosystem: 'yarn'
+    directory: '/' # The root directory of the repository
+    schedule:
+      interval: 'weekly'
