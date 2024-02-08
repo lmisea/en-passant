@@ -34,9 +34,11 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
    ```
 
 3. Install dependencies.
+
    ```bash
    yarn install
    ```
+
 4. Run the prepare script for setting up the git hooks.
    ```bash
    yarn prepare
@@ -45,21 +47,33 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 ### Development
 
 1. _Vite.js_ starts the development server on the localhost.
+
    ```bash
    yarn dev
    ```
+
 2. Start the storybook server.
+
    ```bash
    yarn storybook
+   ```
+
+3. For updating the dependencies, run the following command.
+
+   ```bash
+   yarn upgrade-interactive
    ```
 
 ### Production
 
 1. _Vite.js_ builds the app into a static site on the `dist` folder.
+
    ```bash
    yarn build
    ```
+
 2. After building the app, _vite.js_ will also allow you to preview the build on the localhost.
+
    ```bash
    yarn preview
    ```

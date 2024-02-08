@@ -4271,7 +4271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-essentials@npm:^7.6.7":
+"@storybook/addon-essentials@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/addon-essentials@npm:7.6.13"
   dependencies:
@@ -4305,7 +4305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-interactions@npm:^7.6.7":
+"@storybook/addon-interactions@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/addon-interactions@npm:7.6.13"
   dependencies:
@@ -4318,7 +4318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^7.6.7":
+"@storybook/addon-links@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/addon-links@npm:7.6.13"
   dependencies:
@@ -4344,7 +4344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-onboarding@npm:^1.0.10":
+"@storybook/addon-onboarding@npm:^1.0.11":
   version: 1.0.11
   resolution: "@storybook/addon-onboarding@npm:1.0.11"
   dependencies:
@@ -4383,7 +4383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:7.6.13, @storybook/blocks@npm:^7.6.7":
+"@storybook/blocks@npm:7.6.13, @storybook/blocks@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/blocks@npm:7.6.13"
   dependencies:
@@ -4871,7 +4871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-vite@npm:^7.6.7":
+"@storybook/react-vite@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/react-vite@npm:7.6.13"
   dependencies:
@@ -4890,7 +4890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.6.13, @storybook/react@npm:^7.6.7":
+"@storybook/react@npm:7.6.13, @storybook/react@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/react@npm:7.6.13"
   dependencies:
@@ -4953,7 +4953,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:^7.6.7":
+"@storybook/test@npm:^7.6.13":
   version: 7.6.13
   resolution: "@storybook/test@npm:7.6.13"
   dependencies:
@@ -5593,7 +5593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.2.18":
+"@types/react-dom@npm:^18.2.19":
   version: 18.2.19
   resolution: "@types/react-dom@npm:18.2.19"
   dependencies:
@@ -5602,7 +5602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.2.45":
+"@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.2.55":
   version: 18.2.55
   resolution: "@types/react@npm:18.2.55"
   dependencies:
@@ -5694,7 +5694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^6.16.0":
+"@typescript-eslint/eslint-plugin@npm:^6.21.0":
   version: 6.21.0
   resolution: "@typescript-eslint/eslint-plugin@npm:6.21.0"
   dependencies:
@@ -5719,7 +5719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^6.16.0":
+"@typescript-eslint/parser@npm:^6.21.0":
   version: 6.21.0
   resolution: "@typescript-eslint/parser@npm:6.21.0"
   dependencies:
@@ -6383,7 +6383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.16":
+"autoprefixer@npm:^10.4.17":
   version: 10.4.17
   resolution: "autoprefixer@npm:10.4.17"
   dependencies:
@@ -7678,39 +7678,39 @@ __metadata:
     "@chakra-ui/react": "npm:^2.8.2"
     "@emotion/react": "npm:^11.11.3"
     "@emotion/styled": "npm:^11.11.0"
-    "@storybook/addon-essentials": "npm:^7.6.7"
-    "@storybook/addon-interactions": "npm:^7.6.7"
-    "@storybook/addon-links": "npm:^7.6.7"
-    "@storybook/addon-onboarding": "npm:^1.0.10"
-    "@storybook/blocks": "npm:^7.6.7"
-    "@storybook/react": "npm:^7.6.7"
-    "@storybook/react-vite": "npm:^7.6.7"
-    "@storybook/test": "npm:^7.6.7"
+    "@storybook/addon-essentials": "npm:^7.6.13"
+    "@storybook/addon-interactions": "npm:^7.6.13"
+    "@storybook/addon-links": "npm:^7.6.13"
+    "@storybook/addon-onboarding": "npm:^1.0.11"
+    "@storybook/blocks": "npm:^7.6.13"
+    "@storybook/react": "npm:^7.6.13"
+    "@storybook/react-vite": "npm:^7.6.13"
+    "@storybook/test": "npm:^7.6.13"
     "@svgr/cli": "npm:^8.1.0"
-    "@types/react": "npm:^18.2.45"
-    "@types/react-dom": "npm:^18.2.18"
-    "@typescript-eslint/eslint-plugin": "npm:^6.16.0"
-    "@typescript-eslint/parser": "npm:^6.16.0"
+    "@types/react": "npm:^18.2.55"
+    "@types/react-dom": "npm:^18.2.19"
+    "@typescript-eslint/eslint-plugin": "npm:^6.21.0"
+    "@typescript-eslint/parser": "npm:^6.21.0"
     "@vitejs/plugin-react": "npm:^4.2.1"
-    autoprefixer: "npm:^10.4.16"
+    autoprefixer: "npm:^10.4.17"
     eslint: "npm:^8.56.0"
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.5"
     eslint-plugin-storybook: "npm:^0.6.15"
-    framer-motion: "npm:^10.16.16"
-    husky: "npm:^8.0.3"
-    lint-staged: "npm:^15.2.0"
-    postcss: "npm:^8.4.32"
-    prettier: "npm:^3.1.1"
+    framer-motion: "npm:^11.0.3"
+    husky: "npm:^9.0.10"
+    lint-staged: "npm:^15.2.2"
+    postcss: "npm:^8.4.35"
+    prettier: "npm:^3.2.5"
     prettier-package-json: "npm:^2.8.0"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    storybook: "npm:^7.6.7"
-    tailwindcss: "npm:^3.4.0"
+    storybook: "npm:^7.6.13"
+    tailwindcss: "npm:^3.4.1"
     typescript: "npm:^5.3.3"
-    vite: "npm:^5.0.10"
+    vite: "npm:^5.1.0"
   languageName: unknown
   linkType: soft
 
@@ -8701,9 +8701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^10.16.16":
-  version: 10.18.0
-  resolution: "framer-motion@npm:10.18.0"
+"framer-motion@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "framer-motion@npm:11.0.3"
   dependencies:
     "@emotion/is-prop-valid": "npm:^0.8.2"
     tslib: "npm:^2.4.0"
@@ -8718,7 +8718,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/0aea1b3dc5cf06687e31f3b6c0b6b1a2cd070afdd4a9d38ebf15715c662ca1d6d1c25e6778695e5ebff37a6ce92b031d036c02570370e6057e66aa9de9f9370f
+  checksum: 10c0/a9a70196ea5d264f749a7dea1ccb7c33decf969680a907c595eb48d84510b60fb51e3e0d16d5bcac0997eea041f796f2cba4a5505e0a00f373ffbadfb5f36564
   languageName: node
   linkType: hard
 
@@ -9283,12 +9283,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
+"husky@npm:^9.0.10":
+  version: 9.0.10
+  resolution: "husky@npm:9.0.10"
   bin:
-    husky: lib/bin.js
-  checksum: 10c0/6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+    husky: bin.mjs
+  checksum: 10c0/585d95fec151d2e3fba1a8d97c1290dee40b83eb2b8850afae0805e183b3b3ec45bfeef97b2d0c4ae16f1c1bf19788b9129627d9ba02d924c874632207e33b93
   languageName: node
   linkType: hard
 
@@ -10155,7 +10155,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^15.2.0":
+"lint-staged@npm:^15.2.2":
   version: 15.2.2
   resolution: "lint-staged@npm:15.2.2"
   dependencies:
@@ -11448,7 +11448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.32, postcss@npm:^8.4.35":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.35":
   version: 8.4.35
   resolution: "postcss@npm:8.4.35"
   dependencies:
@@ -11494,7 +11494,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.1.1":
+"prettier@npm:^3.2.5":
   version: 3.2.5
   resolution: "prettier@npm:3.2.5"
   bin:
@@ -12758,7 +12758,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^7.6.7":
+"storybook@npm:^7.6.13":
   version: 7.6.13
   resolution: "storybook@npm:7.6.13"
   dependencies:
@@ -13032,7 +13032,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.0":
+"tailwindcss@npm:^3.4.1":
   version: 3.4.1
   resolution: "tailwindcss@npm:3.4.1"
   dependencies:
@@ -13730,7 +13730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.10":
+"vite@npm:^5.1.0":
   version: 5.1.0
   resolution: "vite@npm:5.1.0"
   dependencies:
