@@ -22,19 +22,19 @@ jobs:
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> $GITHUB_ENV
 
       - name: Cache Node.js modules
         id: yarn-cache
         uses: actions/cache@v3
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          path: ${{ env.YARN_CACHE_DIR }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable --immutable-cache
 
       - name: Lint
         run: yarn lint
