@@ -2,8 +2,10 @@
 logs
 *.log
 
-# Dependency directories
+# Dependency directories and files
 node_modules
+package-lock.json
+.yarn
 
 # Generated files
 dist

@@ -1,7 +1,7 @@
 # EnPassant
 
 [![Node.js](https://img.shields.io/badge/Node.js-v20-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/es/)
-[![npm](https://img.shields.io/badge/npm-v10-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![yarn](https://img.shields.io/badge/yarn-v4-2E2A65?style=flat-square&logo=yarn&logoColor=white)](https://yarnpkg.com/)
 [![React](https://img.shields.io/badge/React-v18-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-v5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite.js](https://img.shields.io/badge/Vite.js-v5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -16,45 +16,52 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/).
-- [npm](https://www.npmjs.com/).
+- [Node.js v20](https://nodejs.org/en/).
 
 ### Installation
 
 1. Clone the repo.
+
    ```bash
    git clone https://github.com/lmisea/en-passant.git en-passant
    cd en-passant
    ```
-2. Install npm packages.
+
+2. Enable corepack in Node.js v20 for being able to use yarn v4.
+
    ```bash
-   npm install
+   corepack enable
    ```
-3. Run the prepare script for setting up the git hooks.
+
+3. Install dependencies.
    ```bash
-   npm run prepare
+   yarn install
+   ```
+4. Run the prepare script for setting up the git hooks.
+   ```bash
+   yarn prepare
    ```
 
 ### Development
 
 1. _Vite.js_ starts the development server on the localhost.
    ```bash
-   npm run dev
+   yarn dev
    ```
 2. Start the storybook server.
    ```bash
-   npm run storybook
+   yarn storybook
    ```
 
 ### Production
 
 1. _Vite.js_ builds the app into a static site on the `dist` folder.
    ```bash
-   npm run build
+   yarn build
    ```
 2. After building the app, _vite.js_ will also allow you to preview the build on the localhost.
    ```bash
-   npm run preview
+   yarn preview
    ```
 
 ## Attributions
