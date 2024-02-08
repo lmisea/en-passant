@@ -1,10 +1,13 @@
-# En-passant
+# EnPassant
 
 [![Node.js](https://img.shields.io/badge/Node.js-v20-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/es/)
 [![npm](https://img.shields.io/badge/npm-v10-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/)
 [![React](https://img.shields.io/badge/React-v18-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-v5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite.js](https://img.shields.io/badge/Vite.js-v5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Storybook](https://img.shields.io/badge/Storybook-v7-FF4785?style=flat-square&logo=storybook&logoColor=white)](https://storybook.js.org/)
+[![Chakra UI](https://img.shields.io/badge/Chakra%20UI-v2-319795?style=flat-square&logo=chakra-ui&logoColor=white)](https://chakra-ui.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-0088cc?style=flat-square&logo=github)](https://github.com/lmisea/en-passant/blob/main/LICENSE)
 
 A friendly chess platform built with [react](https://reactjs.org/) and [typescript](https://www.typescriptlang.org/).
@@ -13,8 +16,8 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (^20.10.0).
-- [npm](https://www.npmjs.com/) (^10.2.5).
+- [Node.js](https://nodejs.org/en/).
+- [npm](https://www.npmjs.com/).
 
 ### Installation
 
@@ -25,7 +28,7 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
    ```
 2. Install npm packages.
    ```bash
-    npm install
+   npm install
    ```
 3. Run the prepare script for setting up the git hooks.
    ```bash
@@ -53,3 +56,11 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
    ```bash
    npm run preview
    ```
+
+## Attributions
+
+All the attributions are located in the [ATTRIBUTIONS.md](https://github.com/lmisea/en-passant/blob/main/ATTRIBUTIONS.md) file.
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/lmisea/en-passant/blob/main/LICENSE).

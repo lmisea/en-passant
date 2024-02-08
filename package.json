@@ -1,54 +1,74 @@
 {
-  "name": "en-passant",
-  "author": {
-    "name": "Luis Isea",
-    "email": "isea.luis.miguel@gmail.com"
-  },
-  "license": "MIT",
   "private": true,
+  "name": "en-passant",
   "version": "0.0.0",
+  "description": "A friendly chess platform",
+  "license": "MIT",
+  "author": "Luis Isea <isea.luis.miguel@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmisea/en-passant.git"
+  },
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "build-storybook": "storybook build",
+    "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "husky install",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "svgr:create": "svgr -- public/piece/cburnett"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.6",
-    "@storybook/addon-interactions": "^7.6.6",
-    "@storybook/addon-links": "^7.6.6",
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
     "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/blocks": "^7.6.6",
-    "@storybook/react": "^7.6.6",
-    "@storybook/react-vite": "^7.6.6",
-    "@storybook/test": "^7.6.6",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/react-vite": "^7.6.7",
+    "@storybook/test": "^7.6.7",
+    "@svgr/cli": "^8.1.0",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.55.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.4.32",
     "prettier": "^3.1.1",
+    "prettier-package-json": "^2.8.0",
     "prop-types": "^15.8.1",
-    "storybook": "^7.6.6",
+    "storybook": "^7.6.7",
+    "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
   },
-  "packageManager": "npm@10.2.5",
+  "keywords": [
+    "chess",
+    "chessboard",
+    "react",
+    "typescript"
+  ],
   "engines": {
-    "node": "20",
-    "npm": "10"
-  }
+    "node": "^20.10.0",
+    "npm": "^10.2.5"
+  },
+  "packageManager": "npm@10.2.5"
 }
