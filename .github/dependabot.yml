@@ -2,7 +2,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: 'yarn'
+  - package-ecosystem: 'npm'
     directory: '/' # The root directory of the repository
     schedule:
       interval: 'weekly'
