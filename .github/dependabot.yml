@@ -1,8 +1,8 @@
-# Dependant bot configuration file
+# Dependabot configuration file
 
 version: 2
 updates:
-  - package-ecosystem: 'npm'
+  - package-ecosystem: 'npm' # 'npm' must be specified for using Yarn, there is no 'yarn' option
     directory: '/' # The root directory of the repository
     schedule:
       interval: 'weekly'
