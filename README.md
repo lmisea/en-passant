@@ -80,8 +80,8 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 
 ## Attributions
 
-All the attributions are located in the [ATTRIBUTIONS.md](https://github.com/lmisea/en-passant/blob/main/ATTRIBUTIONS.md) file.
+All the attributions are located in the [ATTRIBUTIONS.md](./ATTRIBUTIONS.md) file.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/lmisea/en-passant/blob/main/LICENSE).
+Distributed under the MIT License. See [LICENSE](./LICENSE).
