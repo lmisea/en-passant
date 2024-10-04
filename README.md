@@ -16,7 +16,7 @@ A friendly chess platform built with [react](https://reactjs.org/) and [typescri
 
 ### Prerequisites
 
-- [Node.js v20](https://nodejs.org/en/).
+- [Node.js v22](https://nodejs.org/en/download/package-manager).
 
 ### Installation
 
